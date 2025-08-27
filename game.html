@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snake Game</title>
     <link rel="stylesheet" href="css/game.css">
 </head>
+
 <body>
-    <h1>Snake Game</h1>
-    <canvas id="game" width="400" height="400"></canvas>
-    <p id="score">Score: 0 | High Score: 0 | Level: 1</p>
-    <button id="restart">Restart</button>
+    <div class="container">
+        <h1 class="title">🐍 Snake Game</h1>
+        <canvas id="game" width="400" height="400"></canvas>
+
+        <div class="hud">
+            <p id="score" class="scoreboard">Score: 0 | High Score: 0 | Level: 1</p>
+            <button id="restart" class="btn">⟳ Restart</button>
+        </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>💀 Game Over!</h2>
+            <p id="finalScore">Final Score: 0</p>
+            <button id="playAgain" class="btn">▶ Play Again</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Made with ❤️ | Use arrow keys to play</p>
+    </footer>
 
     <script src="js/game.js"></script>
 </body>
+
 </html>
