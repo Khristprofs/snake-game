@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color: #222;
+    color: white;
+    font-family: sans-serif;
+}
+canvas{
+    background-color: #111;
+    border: 2px solid #fff;
+    margin-top: 20px;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: limegreen;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black;
+}
